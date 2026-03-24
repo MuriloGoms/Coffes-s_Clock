@@ -350,5 +350,51 @@
         display: flex;
         justify-content: flex-start;
         margin-top: 60px;
-        
     }
+
+    .addKart button{
+        width: 50%;
+        height: 100%;
+        background: #211910;
+        border: none;
+        color: #ffff;
+        font-size: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform .15s ease;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .addKart button:hover{
+        background: #6D5B46;
+    }
+
+    .addKart button:active{
+        transform: scale(0.98);
+    }
+
+    .addKart img {
+        width: 40px;
+        height: 40px;
+        background: #ffff;
+
+    }
+
+    /*tela responsiva*/
+    @media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .product-card .description {
+        align-items: center;
+        padding-top: 0;
+    }
+    
+    .product-card img {
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+    }
+}
