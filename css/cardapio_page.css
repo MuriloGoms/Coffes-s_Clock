@@ -101,6 +101,13 @@
         font-size: 16px;
         box-shadow: 0 8px 8px rgba(0, 0, 0, 0.12);
         transition: transform .15s ease;
+        gap: 8px;
+    }
+
+    .user-icon{
+        width: 20px;
+        height: 20px;
+        filter: brightness(0) invert(1);
     }
 
     .btnLogin a:hover {
@@ -304,7 +311,7 @@
     .product-card .description{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; /* Conteúdo do texto alinhado no topo */
+        justify-content: space-between; /* Conteúdo do texto alinhado no topo */
         flex: 1;
         padding-top: 10px; /* Ajuste fino para posicionar o título */
     }
@@ -316,10 +323,10 @@
     }
 
     .product-card .description p {
-    margin: 20px 10px 0 0;
-    font-size: 15px;
-    color: #575555;
-    line-height: 1.4;
+        margin: 20px 10px 0 0;
+        font-size: 15px;
+        color: #575555;
+        line-height: 1.4;
     }
 
     .cappuccino img {
@@ -332,7 +339,18 @@
     }
 
     
-    .image-container img {
+    /*Isso resolveu o problema do icone do carrinho dentro do botao*/
+
+    /* antigo
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.12);
+    */
+
+    /* novo */
+    .product-card img:not(.cart-icon) {
         width: 200px;
         height: 200px;
         object-fit: cover;
@@ -344,17 +362,14 @@
         margin: 0;
     }
 
-    .addKart {
+    .addCart {
         width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 60px;
+        margin-top: auto;
     }
 
-    .addKart button{
+    .addCart .btn-cart{
         width: 50%;
-        height: 100%;
+        height: 50px;
         background: #211910;
         border: none;
         color: #ffff;
@@ -363,21 +378,27 @@
         cursor: pointer;
         transition: transform .15s ease;
         box-shadow: 0 8px 8px rgba(0, 0, 0, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 20px;
     }
 
-    .addKart button:hover{
+    .addCart .btn-cart:hover{
         background: #6D5B46;
     }
 
-    .addKart button:active{
+    .addCart button:active{
         transform: scale(0.98);
     }
 
-    .addKart img {
-        width: 40px;
-        height: 40px;
-        background: #ffff;
-
+    .cart-icon {
+        width: 24px !important; 
+        height: 24px !important;
+        filter: brightness(0) invert(1) !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
     }
 
     /*tela responsiva*/
