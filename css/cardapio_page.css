@@ -419,3 +419,9 @@
         margin-top: 15px;
     }
 }
+
+    .underline{
+        width: 100%;
+        border-bottom: 2px solid #adaaaa;
+        padding-top: 50px;
+    }
