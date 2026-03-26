@@ -48,3 +48,19 @@ function ativarCadastro(){
     cadastroBtn.classList.add("ativo");
     loginBtn.classList.remove("ativo")
 }
+
+function enviar(){
+    const nome = document.getElementById("nome").value;
+
+    fetch("salvar.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "nome=" + encodeURIComponent(nome) 
+    })
+    .then(response => response.text())
+    .then(retorno => {
+        document.getElementById("resposta").innerText = retorno;
+    });
+}
