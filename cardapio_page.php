@@ -19,7 +19,7 @@
             </div>
 
             <div class="bar-options">
-                <li><a href="home_page.html">Home</a></li>
+                <li><a href="home_page.php">Home</a></li>
                 <li>Lojas</li>
                 <li>Impacto Social</li>
                 <li><a href="https://youtu.be/dQw4w9WgXcQ?si=KOn6qFJ-Z_Gn_Iwp" target="_blank">+55 (11) 95500-7814</a>

@@ -19,7 +19,7 @@
             </div>
 
             <div class="bar-options">
-                <li><a href="cardapio_page.html">Cardápio</a></li>
+                <li><a href="cardapio_page.php">Cardápio</a></li>
                 <li>Lojas</li>
                 <li>Impacto Social</li>
                 <li>+55 (11) 95500-7914</li>
@@ -108,6 +108,8 @@
             <div class="login-form" id="login">
                 <input type="text" name="user-name" id="user-name" placeholder="Nome"><br><br>
                 <input type="password" name="user-password" id="user-password" placeholder="Senha"><br><br>
+                <span class="error-msg"></span>
+                
                 <div class="remember-forgot">
                     <label>
                         <input type="checkbox">
@@ -124,6 +126,8 @@
                 <input type="text" name="user-name" id="user-name" placeholder="Nome"><br><br>
                 <input type="email" name="user-email" id="user-email" placeholder="Email"><br><br>
                 <input type="password" name="user-password" id="user-pass" placeholder="Senha"><br>
+                <span class="error-msg">Erro ao cadastrar o usuário</span>
+
                 <div class="remember-forgot">
                     <label>
                         <input type="checkbox">
